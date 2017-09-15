@@ -14,8 +14,8 @@ import urllib2
 LanID=raw_input("Lan-ID / Username: ")
 Database=raw_input("Enter Orcale Database: ")
 password=getpass.getpass("Enter Password: ")
-ID = "EDR"
-table= "DIM_ORG_HIERARCHY"
+ID = raw_input("Enter Schema Name: ")
+table= raw_input("Enter Table Name: ")
 
 ###SQL Database Extract																																									
 connection = cx_Oracle.connect(LanID+'/'+password+'@'+Database.upper())
